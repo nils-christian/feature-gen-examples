@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="Example"/>
+    <feature automatic="unselected" name="First"/>
+    <feature automatic="selected" name="Second"/>
+    <feature automatic="selected" name="Third"/>
+</configuration>  

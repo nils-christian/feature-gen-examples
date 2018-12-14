@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="Example">
+        	<feature name="First"/>
+        	<feature name="Second"/>
+        	<feature name="Third"/>
+        </and>
+    </struct>
+</featureModel>
