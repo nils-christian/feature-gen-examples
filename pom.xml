@@ -19,6 +19,7 @@
 		<module>featuregen-examples-parent</module>
 		<module>featuregen-examples-spring-boot</module>
 		<module>featuregen-examples-generator</module>
+		<module>featuregen-examples-annotation-processor</module>
 	</modules>
 	
 </project>
