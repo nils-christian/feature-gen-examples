@@ -18,6 +18,7 @@
 		<module>featuregen-examples-dependencies</module>
 		<module>featuregen-examples-parent</module>
 		<module>featuregen-examples-spring-boot</module>
+		<module>featuregen-examples-generator</module>
 	</modules>
 	
 </project>
