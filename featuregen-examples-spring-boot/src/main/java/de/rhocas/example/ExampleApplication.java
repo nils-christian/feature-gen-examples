@@ -13,29 +13,29 @@ import de.rhocas.example.variant.Variant2;
 @SpringBootApplication
 public class ExampleApplication {
 
-	public static void main(String[] args) {
-		new SpringApplicationBuilder(ExampleApplication.class)
-			.logStartupInfo(false)
-			.bannerMode(Mode.OFF)
-			.run(args);
+	public static void main( final String[] args ) {
+		new SpringApplicationBuilder( ExampleApplication.class )
+				.logStartupInfo( false )
+				.bannerMode( Mode.OFF )
+				.run( args );
 	}
-	
+
 	@Bean
-	@Profile("Variant1")
+	@Profile( "Variant1" )
 	public ExampleFeatureCheckService variant1FeatureCheckService() {
-		return ExampleFeatureCheckService.of(Variant1.class);
+		return ExampleFeatureCheckService.of( Variant1.class );
 	}
-	
+
 	@Bean
-	@Profile("Variant2")
+	@Profile( "Variant2" )
 	public ExampleFeatureCheckService variant2FatureCheckService() {
-		return ExampleFeatureCheckService.of(Variant2.class);
+		return ExampleFeatureCheckService.of( Variant2.class );
 	}
-	
+
 	@Bean
-	@Profile("default")
+	@Profile( "default" )
 	public ExampleFeatureCheckService defaultFeatureCheckService() {
 		return ExampleFeatureCheckService.empty();
 	}
-	
+
 }

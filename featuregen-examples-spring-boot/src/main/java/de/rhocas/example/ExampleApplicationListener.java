@@ -13,12 +13,12 @@ public class ExampleApplicationListener implements ApplicationListener<ContextRe
 
 	@Autowired
 	private ExampleFeatureCheckService featureCheckService;
-	
+
 	@Override
-	public void onApplicationEvent(final ContextRefreshedEvent event) {
-		System.out.println("First feature active: " + featureCheckService.isFeatureActive(ExampleFeature.FIRST_FEATURE));
-		System.out.println("Second feature active: " + featureCheckService.isFeatureActive(ExampleFeature.SECOND_FEATURE));
-		System.out.println("Third feature active: " + featureCheckService.isFeatureActive(ExampleFeature.THIRD_FEATURE));
+	public void onApplicationEvent( final ContextRefreshedEvent event ) {
+		System.out.println( "First feature active: " + featureCheckService.isFeatureActive( ExampleFeature.FIRST_FEATURE ) );
+		System.out.println( "Second feature active: " + featureCheckService.isFeatureActive( ExampleFeature.SECOND_FEATURE ) );
+		System.out.println( "Third feature active: " + featureCheckService.isFeatureActive( ExampleFeature.THIRD_FEATURE ) );
 	}
 
 }
